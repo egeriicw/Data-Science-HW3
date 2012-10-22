@@ -1,4 +1,6 @@
 setwd("~/Dropbox/Fall_2012/Intro_to_Data_Science/Assignments/HW3/Data Science HW3/LaTeX")
+library(lattice, xtable)
+#getting the data from Yahoo Finance and making it into a time series object
 IBM <- read.csv("http://ichart.finance.yahoo.com/table.csv?s=IBM&a=00&b=1&c=2000&d=09&e=19&f=2012&g=d&ignore=.csv",stringsAsFactors=FALSE)
 IBM$Date<-as.Date(IBM$Date)
 IBM<-IBM[order(IBM$Date),]
@@ -6,19 +8,19 @@ library(zoo)
 dim(IBM)
 ts.IBM <- zoo(IBM$Close, IBM$Date) 
 
-#calculating and plotting log return:
+#calculating and plotting log return and storing it into a data frame 
+# this new df will be one record shorter because log returns is a change between two points - we have one less log return than days
 log_return <- diff(log(IBM$Close))
 IBM2 <- cbind(IBM[-1,], log_return) 
-#lose one data point because there is one less return than close
 ts.IBM.return <- zoo(IBM2$log_return, IBM2$Date) 
 plot(ts.IBM.return, main = "IBM log return since Jan 1, 2000", xlab="Date", ylab="Log return")
-
 # calculating and plotting log volume changes:
 IBM2$log_volume_change <-  diff(log(IBM$Volume))
 ts.IBM.volume <- as.ts(IBM2$log_volume_change, IBM2$Date) 
 plot(ts.IBM.volume, main = "IBM log Changes in Volume since Jan 1, 2000", xlab="Date", ylab="Log Volume",col="black")
 
-#now fit regression to it
+
+#now fit regression to it with AR - this failed completely
 model.ar.1 <- ar(log_return,aic=FALSE,2) # fit ar(4)
 model.ar.2 <- ar(log_return)# fit ar(4)
 summary(model.ar.1)
@@ -32,7 +34,6 @@ n <-
 
 #not using ar, but doing just an lm:
 # need to order the data correctly:
-
 train <-IBM2$log_return[which(IBM2$Date<="2011-01-03")]
 test <- IBM2$log_return[which(IBM2$Date>="2011-01-03")]
 test_df <- subset(IBM2,(IBM2$Date>="2011-01-05"))
@@ -67,40 +68,3 @@ mod2$fitted.values[1:3]
 act[1:3]
 mod2$coefficients
 -0.017391743 *(-0.0116064093) + (-0.0444074158)*(-0.004395611)+0.0001715389
-
-test_returns(dates=dates,actual=act,predicted=predicted)
-
-
-
-dates=dates
-actual=act
-predicted=mod2$fitted.values
-
-returns <- 0
-earnings <- NULL
-for (day in 3:length(predicted)){
-    temp_return <- NULL
-    if (predicted[day]*actual[day]>0){ #multiply together, if same sign, positive
-        returns <- returns + abs(actual[day])
-        temp_return <- abs(actual[day])
-    }
-    else{
-        returns <- returns - abs(actual[day])
-        temp_return <- abs(actual[day])*-1
-    }
-    earnings[day-3] <- temp_return
-}
-new.dates <- dates[3:length(dates)]
-PL <- cumsum(earnings)
-ts.PL <- zoo(PL,new.dates)
-plot(ts.PL[1:(length(ts.PL)-1)])
-return (returns)
-
-ts.PL[3210:3218]
-
-cumsum(earnings)
-returns
-
-
-library(xtable)
-xtable(summary(mod2))

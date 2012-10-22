@@ -1,3 +1,4 @@
+# Helper function that was that takes three arguments- the dates of the data, actual log returns, and predicted log returns so that it can be used to calculate the cumulative p&l and graph the cumulative p&l over time regardless of how the model was created
 test_returns <-function(dates, actual, predicted){
     returns <- 0
     earnings <- NULL

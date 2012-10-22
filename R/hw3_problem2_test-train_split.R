@@ -15,50 +15,54 @@ plot(ts.IBM.return, main = "IBM log return since Jan 1, 2000", xlab="Date", ylab
 
 # calculating and plotting log volume changes:
 IBM2$log_volume_change <-  diff(log(IBM$Volume))
-ts.IBM.volume <- zoo(IBM2$log_volume_change, IBM2$Date) 
-plot(ts.IBM.volume, main = "IBM log Changes in Volume since Jan 1, 2000", xlab="Date", ylab="Log Volume",col="blue")
+ts.IBM.volume <- as.ts(IBM2$log_volume_change, IBM2$Date) 
+plot(ts.IBM.volume, main = "IBM log Changes in Volume since Jan 1, 2000", xlab="Date", ylab="Log Volume",col="black")
 
 #now fit regression to it
-model1 <- ar(ts.IBM.return, FALSE, 2, se.fit = TRUE) # fit ar(4)
-model1$ar
+model.ar.1 <- ar(log_return,aic=FALSE,2) # fit ar(4)
+model.ar.2 <- ar(log_return)# fit ar(4)
+summary(model.ar.1)
+summary(model.ar.2)
+model.ar.2$partialacf
 plot(model1)
-predict(model1, newdata=IBM2$log_return)
+pred.ar2 <- predict(model1, newdata=IBM2$log_return[3:23])
 model1
-
-
+plot(pred.ar2)
+n <- 
 
 #not using ar, but doing just an lm:
 # need to order the data correctly:
 
-train <-IBM2$log_return[which(IBM2$Date<"2012-01-03")]
-test <- IBM2$log_return[which(IBM2$Date>="2012-01-03")]
-test_df <- subset(IBM2,(IBM2$Date>="2012-01-05"))
+train <-IBM2$log_return[which(IBM2$Date<="2011-01-03")]
+test <- IBM2$log_return[which(IBM2$Date>="2011-01-03")]
+test_df <- subset(IBM2,(IBM2$Date>="2011-01-05"))
 #test <- subset(IBM2,IBM2$Date>"2012-01-03")
 # build a lagged training data set
 lag <- data.frame(Response=train[3:length(train)], 
                     Predictor1 = train[2:(length(train)-1)], #lagged by 1 day
                     Predictor2 = train[1:(length(train)-2)]) #blagged by 2 days
 mod2 <- lm(Response~Predictor1+Predictor2, data=lag)
-summary(mod2)
+xtable(summary(mod2))
 test_lag <- data.frame(Predictor1 = test[2:(length(test)-1)], #lagged by 1 day
                         Predictor2 = test[1:(length(test)-2)]) #blagged by 2 days
 allignment <- cbind(test_df,test_lag)
 allignment$predicted <- predict(mod2, test_lag)
 
-ts.actual <- zoo(allignment$log_return, allignment$dates)
-ts.forecast <- zoo(allignment$predicted,allignment$dates)
+ts.actual <- zoo(allignment$log_return, allignment$Date)
+ts.forecast <- zoo(allignment$predicted,allignment$Date)
 ts.compare <- cbind(ts.actual,ts.forecast)
-head(ts.compare)
-plot(ts.compare)
-#view the results compared to the actual for the first 30 days of trading
 ts.test<- ts.compare[150:200]
-plot(ts.test, plot.type="single", col= c("black", "grey"),lty=1:2) + legend(x="topleft", legend=c("Actual","Predicted"), col=c("black","grey"),  lty=1:2) 
-#note that we should explain the long lengths of lines with no points that cross non-trading days
+plot(ts.test, plot.type="single", col= c("black", "red"),lty=1:1,pch=16,main="Model Performance in the Last 50 Trading Days", xlab="Date", ylab="log Return") + legend(x="bottom", legend=c("Actual log Return","Predicted log Return"), col=c("black","red"),  lty=1:1)
+abline(h=0, v=0, col = "gray60",lty=2)
+library(lattice)
+ts.test<- ts.compare[150:200]
+xyplot(ts.test, type = "o", lty=0:1, panel ="panel.superpose", screens=1, auto.key=TRUE, llines(y=0), lwd=2) 
 
-#Design an experiment to see if we can make money
 
-## subsetting with numeric indexes
-#prove that the model makes sense and we didn't sift any days....
+
+test_returns(dates=allignment$Date,actual=allignment$log_return,predicted=allignment$predicted)
+
+#test case to make sure that the model is fit right and all of the 
 mod2$fitted.values[1:3]
 act[1:3]
 mod2$coefficients
@@ -98,4 +102,5 @@ cumsum(earnings)
 returns
 
 
-
+library(xtable)
+xtable(summary(mod2))

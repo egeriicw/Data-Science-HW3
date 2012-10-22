@@ -35,8 +35,8 @@ ret <-IBM2$log_return
 lag <- data.frame(Response=ret[3:length(ret)], 
                     Predictor1 = ret[2:(length(ret)-1)], #lagged by 1 day
                     Predictor2 = ret[1:(length(ret)-2)]) #blagged by 2 days
-mod2 <- lm(Response~Predictor1+Predictor2, data=lag)
-summary(mod2)
+mod1 <- lm(Response~Predictor1+Predictor2, data=lag)
+summary(mod1)
 class(mod2$fitted.values)
 class(IBM2$date[3:dim(IBM2)[1]])
 class(IBM2$log_return[3:dim(IBM2)[1]])
@@ -49,8 +49,9 @@ class(ts.compare)
 head(ts.compare)
 plot(ts.compare)
 #view the results compared to the actual for the first 30 days of trading
-ts.test<- ts.compare[20:30]
+ts.test<- ts.compare[1000:1050]
 plot(ts.test, plot.type="single", col= c("black", "grey"),lty=1:2) + legend(x="topleft", legend=c("Actual","Predicted"), col=c("black","grey"),  lty=1:2) 
+
 #note that we should explain the long lengths of lines with no points that cross non-trading days
 
 #Design an experiment to see if we can make money

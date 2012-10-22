@@ -16,7 +16,7 @@ test_returns <-function(dates, actual, predicted){
     new.dates <- dates[3:length(dates)]
     PL <- cumsum(earnings)
     ts.PL <- zoo(PL,new.dates)
-    plot(ts.PL[1:(length(ts.PL)-1)])
+    plot(ts.PL[1:(length(ts.PL)-1)], main="Cumulative P&L", xlab="Time", ylab= "Cumulative Sum of daily log Returns")
     return (returns)
 # zoo object with earnings to see where the model works best... if it gets worse over time
 }

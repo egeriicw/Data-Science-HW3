@@ -30,26 +30,28 @@ model1
 #not using ar, but doing just an lm:
 # need to order the data correctly:
 
-ret <-IBM2$log_return
-# build a lagged data set
-lag <- data.frame(Response=ret[3:length(ret)], 
-                    Predictor1 = ret[2:(length(ret)-1)], #lagged by 1 day
-                    Predictor2 = ret[1:(length(ret)-2)]) #blagged by 2 days
+train <-IBM2$log_return[which(IBM2$Date<"2012-01-03")]
+test <- IBM2$log_return[which(IBM2$Date>="2012-01-03")]
+test_df <- subset(IBM2,(IBM2$Date>="2012-01-05"))
+#test <- subset(IBM2,IBM2$Date>"2012-01-03")
+# build a lagged training data set
+lag <- data.frame(Response=train[3:length(train)], 
+                    Predictor1 = train[2:(length(train)-1)], #lagged by 1 day
+                    Predictor2 = train[1:(length(train)-2)]) #blagged by 2 days
 mod2 <- lm(Response~Predictor1+Predictor2, data=lag)
 summary(mod2)
-class(mod2$fitted.values)
-class(IBM2$date[3:dim(IBM2)[1]])
-class(IBM2$log_return[3:dim(IBM2)[1]])
-act <- IBM2$log_return[3:dim(IBM2)[1]]
-dates <- IBM2$Date[3:dim(IBM2)[1]]
-ts.actual <- zoo(act, dates)
-ts.forecast <- zoo(IBM2$log_return,dates)
+test_lag <- data.frame(Predictor1 = test[2:(length(test)-1)], #lagged by 1 day
+                        Predictor2 = test[1:(length(test)-2)]) #blagged by 2 days
+allignment <- cbind(test_df,test_lag)
+allignment$predicted <- predict(mod2, test_lag)
+
+ts.actual <- zoo(allignment$log_return, allignment$dates)
+ts.forecast <- zoo(allignment$predicted,allignment$dates)
 ts.compare <- cbind(ts.actual,ts.forecast)
-class(ts.compare)
 head(ts.compare)
 plot(ts.compare)
 #view the results compared to the actual for the first 30 days of trading
-ts.test<- ts.compare[20:30]
+ts.test<- ts.compare[150:200]
 plot(ts.test, plot.type="single", col= c("black", "grey"),lty=1:2) + legend(x="topleft", legend=c("Actual","Predicted"), col=c("black","grey"),  lty=1:2) 
 #note that we should explain the long lengths of lines with no points that cross non-trading days
 
@@ -62,7 +64,7 @@ act[1:3]
 mod2$coefficients
 -0.017391743 *(-0.0116064093) + (-0.0444074158)*(-0.004395611)+0.0001715389
 
-test_returns(dates=dates,actual=act,predicted=mod2$fitted.values)
+test_returns(dates=dates,actual=act,predicted=predicted)
 
 
 
@@ -94,3 +96,6 @@ ts.PL[3210:3218]
 
 cumsum(earnings)
 returns
+
+
+

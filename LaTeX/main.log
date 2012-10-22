@@ -1,0 +1,1249 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  6 OCT 2012 19:57
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
+ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
+rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
+kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
+ polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
+lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
+welsh, loaded.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./NIPS10.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2010/10/06 v2.0c eso-pic (RN)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count87
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+\nipsrulerbox=\box26
+\nipsrulercount=\count88
+\nipsruleroffset=\dimen103
+\cv@lineheight=\dimen104
+\cv@boxheight=\dimen105
+\cv@tmpbox=\box27
+\cv@refno=\count89
+\cv@tot=\count90
+\cv@tmpc@=\count91
+\cv@tmpc=\count92
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count93
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen106
+))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen107
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count94
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count95
+\leftroot@=\count96
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count97
+\DOTSCASE@=\count98
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen108
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count99
+\c@MaxMatrixCols=\count100
+\dotsspace@=\muskip10
+\c@parentequation=\count101
+\dspbrk@lvl=\count102
+\tag@help=\toks16
+\row@=\count103
+\column@=\count104
+\maxfields@=\count105
+\andhelp@=\toks17
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
+\@envbody=\toks18
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen115
+\Gin@req@width=\dimen116
+)
+\epsfxsize=\dimen117
+\epsfysize=\dimen118
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip48
+\subfigcapskip=\skip49
+\subfigcaptopadj=\dimen119
+\subfigbottomskip=\skip50
+\subfigcapmargin=\dimen120
+\subfiglabelskip=\skip51
+\c@subfigure=\count106
+\c@lofdepth=\count107
+\c@subtable=\count108
+\c@lotdepth=\count109
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2012/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip52
+\subfig@bottom=\skip53
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count110
+\float@exts=\toks20
+\float@box=\box30
+\@float@everytoks=\toks21
+\@floatcapt=\box31
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks22
+\c@algorithm=\count111
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count112
+\c@ALC@line=\count113
+\c@ALC@rem=\count114
+\c@ALC@depth=\count115
+\ALC@tlm=\skip54
+\algorithmicindent=\skip55
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/easy/easybmat.sty
+Document Style `easybmat' v1.0 <2001/06/13>.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/easy/easy.sty
+Document Style `easy' v1.1 <2001/05/31>.
+Package: easy 2001/05/31 v1.1
+\@easy@level=\count116
+\@easy@ncol=\count117
+\@easy@nrow=\count118
+\@easy@cnt=\count119
+\@easy@boxviii=\box32
+\@easy@minxviii=\dimen121
+\@easy@minyviii=\dimen122
+\@easy@maxxviii=\dimen123
+\@easy@maxyviii=\dimen124
+\@easy@boxvii=\box33
+\@easy@minxvii=\dimen125
+\@easy@minyvii=\dimen126
+\@easy@maxxvii=\dimen127
+\@easy@maxyvii=\dimen128
+\@easy@boxvi=\box34
+\@easy@minxvi=\dimen129
+\@easy@minyvi=\dimen130
+\@easy@maxxvi=\dimen131
+\@easy@maxyvi=\dimen132
+\@easy@boxv=\box35
+\@easy@minxv=\dimen133
+\@easy@minyv=\dimen134
+\@easy@maxxv=\dimen135
+\@easy@maxyv=\dimen136
+\@easy@boxiv=\box36
+\@easy@minxiv=\dimen137
+\@easy@minyiv=\dimen138
+\@easy@maxxiv=\dimen139
+\@easy@maxyiv=\dimen140
+\@easy@boxiii=\box37
+\@easy@minxiii=\dimen141
+\@easy@minyiii=\dimen142
+\@easy@maxxiii=\dimen143
+\@easy@maxyiii=\dimen144
+\@easy@boxii=\box38
+\@easy@minxii=\dimen145
+\@easy@minyii=\dimen146
+\@easy@maxxii=\dimen147
+\@easy@maxyii=\dimen148
+\@easy@boxi=\box39
+\@easy@minxi=\dimen149
+\@easy@minyi=\dimen150
+\@easy@maxxi=\dimen151
+\@easy@maxyi=\dimen152
+\@easy@hsizexxx=\dimen153
+\@easy@vsizexxx=\dimen154
+\@easy@hsizexxix=\dimen155
+\@easy@vsizexxix=\dimen156
+\@easy@hsizexxviii=\dimen157
+\@easy@vsizexxviii=\dimen158
+\@easy@hsizexxvii=\dimen159
+\@easy@vsizexxvii=\dimen160
+\@easy@hsizexxvi=\dimen161
+\@easy@vsizexxvi=\dimen162
+\@easy@hsizexxv=\dimen163
+\@easy@vsizexxv=\dimen164
+\@easy@hsizexxiv=\dimen165
+\@easy@vsizexxiv=\dimen166
+\@easy@hsizexxiii=\dimen167
+\@easy@vsizexxiii=\dimen168
+\@easy@hsizexxii=\dimen169
+\@easy@vsizexxii=\dimen170
+\@easy@hsizexxi=\dimen171
+\@easy@vsizexxi=\dimen172
+\@easy@hsizexx=\dimen173
+\@easy@vsizexx=\dimen174
+\@easy@hsizexix=\dimen175
+\@easy@vsizexix=\dimen176
+\@easy@hsizexviii=\dimen177
+\@easy@vsizexviii=\dimen178
+\@easy@hsizexvii=\dimen179
+\@easy@vsizexvii=\dimen180
+\@easy@hsizexvi=\dimen181
+\@easy@vsizexvi=\dimen182
+\@easy@hsizexv=\dimen183
+\@easy@vsizexv=\dimen184
+\@easy@hsizexiv=\dimen185
+\@easy@vsizexiv=\dimen186
+\@easy@hsizexiii=\dimen187
+\@easy@vsizexiii=\dimen188
+\@easy@hsizexii=\dimen189
+\@easy@vsizexii=\dimen190
+\@easy@hsizexi=\dimen191
+\@easy@vsizexi=\dimen192
+\@easy@hsizex=\dimen193
+\@easy@vsizex=\dimen194
+\@easy@hsizeix=\dimen195
+\@easy@vsizeix=\dimen196
+\@easy@hsizeviii=\dimen197
+\@easy@vsizeviii=\dimen198
+\@easy@hsizevii=\dimen199
+\@easy@vsizevii=\dimen200
+\@easy@hsizevi=\dimen201
+\@easy@vsizevi=\dimen202
+\@easy@hsizev=\dimen203
+\@easy@vsizev=\dimen204
+\@easy@hsizeiv=\dimen205
+\@easy@vsizeiv=\dimen206
+\@easy@hsizeiii=\dimen207
+\@easy@vsizeiii=\dimen208
+\@easy@hsizeii=\dimen209
+\@easy@vsizeii=\dimen210
+\@easy@hsizei=\dimen211
+\@easy@vsizei=\dimen212
+\@easy@dash@len=\dimen213
+\@easy@dash@sep=\dimen214
+)
+Package: easybmat 2001/05/31 v1.1
+\@bmat@size@rule=\dimen215
+\@bmat@size@dash=\dimen216
+) (/usr/local/texlive/2012/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count120
+\lst@gtempboxa=\box40
+\lst@token=\toks23
+\lst@length=\count121
+\lst@currlwidth=\dimen217
+\lst@column=\count122
+\lst@pos=\count123
+\lst@lostspace=\dimen218
+\lst@width=\dimen219
+\lst@newlines=\count124
+\lst@lineno=\count125
+\lst@maxwidth=\dimen220
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count126
+\lst@skipnumbers=\count127
+\lst@framebox=\box41
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks24
+\footnotemargin=\dimen221
+\c@pp@next@reset=\count128
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
+! Too many }'s.
+l.36 }
+      
+? 
+(./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 52.
+ (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+\AtBeginShipoutBox=\box42
+
+(/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count129
+\scratchdimen=\dimen222
+\scratchbox=\box43
+\nofMPsegments=\count130
+\nofMParguments=\count131
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count132
+\MPscratchDim=\dimen223
+\MPnumerator=\count133
+\makeMPintoPDFobject=\count134
+\everyMPtoPDFconversion=\toks26
+) (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\c@lstlisting=\count135
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
+LaTeX Font Info:    Try loading font information for U+msa on input line 54.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 54.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 54.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no î in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+
+Underfull \vbox (badness 5288) has occurred while \output is active []
+
+ [1
+
+{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<scatter_m.pdf, id=9, 505.89pt x 505.89pt>
+File: scatter_m.pdf Graphic file (type pdf)
+ <use scatter_m.pdf>
+Package pdftex.def Info: scatter_m.pdf used on input line 84.
+(pdftex.def)             Requested size: 278.23827pt x 278.24034pt.
+
+Underfull \hbox (badness 1789) in paragraph at lines 99--100
+[]\OT1/ptm/m/n/10 log(gross.sqft) + log(land.sqft) + neigh-bor-hood +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+\OT1/ptm/m/n/10 fac-tor(neighborhood)*factor(building.class.category)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+[]\OT1/ptm/m/n/10 log(gross.sqft) + log(land.sqft) + fac-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+\OT1/ptm/m/n/10 tor(neighborhood)*factor(building.class.category)
+ []
+
+Package epstopdf Info: Source file: <qqnorm.eps>
+(epstopdf)                    date: 2012-10-06 16:46:53
+(epstopdf)                    size: 20577 bytes
+(epstopdf)             Output file: <qqnorm-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-10-06 17:35:56
+(epstopdf)                    size: 48740 bytes
+(epstopdf)             Command: <repstopdf --outfile=qqnorm-eps-converted-to.pd
+f qqnorm.eps>
+(epstopdf)             \includegraphics on input line 111.
+Package epstopdf Info: Output file is already uptodate.
+<qqnorm-eps-converted-to.pdf, id=10, 405.515pt x 289.08pt>
+File: qqnorm-eps-converted-to.pdf Graphic file (type pdf)
+
+<use qqnorm-eps-converted-to.pdf>
+Package pdftex.def Info: qqnorm-eps-converted-to.pdf used on input line 111.
+(pdftex.def)             Requested size: 278.23827pt x 198.35384pt.
+ [2 <./scatter_m.pdf>]
+<map.png, id=20, 777.90625pt x 770.88pt>
+File: map.png Graphic file (type png)
+ <use map.png>
+Package pdftex.def Info: map.png used on input line 169.
+(pdftex.def)             Requested size: 278.23827pt x 275.72867pt.
+ [3 <./qqnorm-eps-converted-to.pdf>] [4 <./map.png>] <class_by_act.pdf, id=35, 
+505.89pt x 505.89pt>
+File: class_by_act.pdf Graphic file (type pdf)
+
+<use class_by_act.pdf>
+Package pdftex.def Info: class_by_act.pdf used on input line 192.
+(pdftex.def)             Requested size: 278.23827pt x 278.24034pt.
+ <misclass_err_sum.pdf, id=36, 505.89pt x 505.89pt>
+File: misclass_err_sum.pdf Graphic file (type pdf)
+
+<use misclass_err_sum.pdf>
+Package pdftex.def Info: misclass_err_sum.pdf used on input line 199.
+(pdftex.def)             Requested size: 278.23827pt x 278.24034pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5 <./class_by_act.pdf>] <misclass_by_act.pdf, id=46, 505.89pt x 505.89pt>
+File: misclass_by_act.pdf Graphic file (type pdf)
+
+<use misclass_by_act.pdf>
+Package pdftex.def Info: misclass_by_act.pdf used on input line 206.
+(pdftex.def)             Requested size: 278.23827pt x 278.24034pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6 <./misclass_err_sum.pdf>]
+Underfull \hbox (badness 2368) in paragraph at lines 225--226
+\OT1/ptm/m/n/10 from a ne-glected Aus-tralian writer to a fa-mous
+ []
+
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <./misclass_by_act.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
+(/usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2004/09/05 1.3 listings language file
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2004/09/05 1.3 listings language file
+) (./Man2.R
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 3.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omlptm.fd
+File: omlptm.fd 
+)
+
+LaTeX Font Warning: Font shape `OML/ptm/bx/n' undefined
+(Font)              using `OML/ptm/m/it' instead
+(Font)              for symbol `textless' on input line 3.
+
+LaTeX Font Info:    Font shape `OML/ptm/m/it' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 3.
+LaTeX Font Info:    Font shape `OML/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 4.
+
+Overfull \hbox (40.51947pt too wide) in paragraph at lines 11--12
+[][][][] 
+ []
+
+
+Overfull \hbox (40.51947pt too wide) in paragraph at lines 13--14
+[][][][] 
+ []
+
+
+Overfull \hbox (190.521pt too wide) in paragraph at lines 15--16
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][] 
+ []
+
+
+Overfull \hbox (166.52075pt too wide) in paragraph at lines 17--18
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+] 
+ []
+
+
+Overfull \hbox (160.52069pt too wide) in paragraph at lines 18--19
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][] 
+ []
+
+
+Overfull \hbox (154.52063pt too wide) in paragraph at lines 21--22
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+] 
+ []
+
+
+Overfull \hbox (46.51953pt too wide) in paragraph at lines 22--26
+[][][][] 
+ []
+
+
+Overfull \hbox (40.51947pt too wide) in paragraph at lines 26--27
+[][][][] 
+ []
+
+
+Overfull \hbox (40.51947pt too wide) in paragraph at lines 28--29
+[][][][] 
+ []
+
+
+Overfull \hbox (82.5199pt too wide) in paragraph at lines 29--30
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 32.
+
+Overfull \hbox (178.52087pt too wide) in paragraph at lines 37--38
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][] 
+ []
+
+
+Overfull \hbox (46.51953pt too wide) in paragraph at lines 41--45
+[][][][] 
+ []
+
+[9]
+Overfull \hbox (40.51947pt too wide) in paragraph at lines 45--46
+[][][][] 
+ []
+
+
+Overfull \hbox (4.5191pt too wide) in paragraph at lines 46--47
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (40.51947pt too wide) in paragraph at lines 47--48
+[][][][] 
+ []
+
+
+Overfull \hbox (28.51935pt too wide) in paragraph at lines 48--49
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (124.52032pt too wide) in paragraph at lines 51--52
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+
+ []
+
+
+Overfull \hbox (88.51996pt too wide) in paragraph at lines 53--54
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (226.52136pt too wide) in paragraph at lines 55--56
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 58.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 58.
+
+Overfull \hbox (10.51917pt too wide) in paragraph at lines 59--60
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (76.51984pt too wide) in paragraph at lines 61--62
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (172.52081pt too wide) in paragraph at lines 64--65
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+[][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (268.52179pt too wide) in paragraph at lines 69--70
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][] 
+ []
+
+
+Overfull \hbox (4.5191pt too wide) in paragraph at lines 73--74
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (58.51965pt too wide) in paragraph at lines 76--77
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (94.52002pt too wide) in paragraph at lines 80--81
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (676.52594pt too wide) in paragraph at lines 87--88
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][] 
+ []
+
+
+Overfull \hbox (856.52777pt too wide) in paragraph at lines 90--91
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10]
+Overfull \hbox (46.51953pt too wide) in paragraph at lines 104--112
+[][][][] 
+ []
+
+
+Overfull \hbox (40.51947pt too wide) in paragraph at lines 112--113
+[][][][] 
+ []
+
+
+Overfull \hbox (40.51947pt too wide) in paragraph at lines 114--115
+[][][][] 
+ []
+
+
+Overfull \hbox (142.52051pt too wide) in paragraph at lines 120--121
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][] 
+ []
+
+
+Overfull \hbox (76.51984pt too wide) in paragraph at lines 131--132
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+] 
+ []
+
+
+Overfull \hbox (166.52075pt too wide) in paragraph at lines 140--141
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][] 
+ []
+
+
+Overfull \hbox (142.52051pt too wide) in paragraph at lines 148--149
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][] 
+ []
+
+
+Overfull \hbox (322.52234pt too wide) in paragraph at lines 153--154
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (136.52045pt too wide) in paragraph at lines 156--157
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (46.51953pt too wide) in paragraph at lines 159--160
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+LaTeX Font Warning: Font shape `OMS/ptm/bx/n' undefined
+(Font)              using `OMS/ptm/m/n' instead
+(Font)              for symbol `textasteriskcentered' on input line 160.
+
+
+Overfull \hbox (574.5249pt too wide) in paragraph at lines 160--161
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+LaTeX Font Info:    Font shape `OMS/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 163.
+
+Overfull \hbox (502.52417pt too wide) in paragraph at lines 163--164
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (124.52032pt too wide) in paragraph at lines 166--167
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (628.52545pt too wide) in paragraph at lines 167--168
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (454.52368pt too wide) in paragraph at lines 171--172
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (40.51947pt too wide) in paragraph at lines 178--179
+[][][][] 
+ []
+
+
+Overfull \hbox (40.51947pt too wide) in paragraph at lines 180--181
+[][][][] 
+ []
+
+
+Overfull \hbox (454.52368pt too wide) in paragraph at lines 183--184
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (286.52197pt too wide) in paragraph at lines 187--188
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][] 
+ []
+
+
+Overfull \hbox (58.51965pt too wide) in paragraph at lines 195--196
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (142.52051pt too wide) in paragraph at lines 199--200
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (184.52094pt too wide) in paragraph at lines 205--206
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+] 
+ []
+
+
+Overfull \hbox (142.52051pt too wide) in paragraph at lines 212--213
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][] 
+ []
+
+
+Overfull \hbox (148.52057pt too wide) in paragraph at lines 213--214
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (262.52173pt too wide) in paragraph at lines 219--220
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+Overfull \hbox (712.5263pt too wide) in paragraph at lines 225--227
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (1186.53113pt too wide) in paragraph at lines 233--235
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (1456.53387pt too wide) in paragraph at lines 240--242
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][] 
+ []
+
+
+Overfull \hbox (286.52197pt too wide) in paragraph at lines 252--253
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][] 
+ []
+
+
+Overfull \hbox (124.52032pt too wide) in paragraph at lines 253--254
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (58.51965pt too wide) in paragraph at lines 259--260
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (136.52045pt too wide) in paragraph at lines 263--264
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (910.52832pt too wide) in paragraph at lines 271--273
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (832.52753pt too wide) in paragraph at lines 273--275
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (160.52069pt too wide) in paragraph at lines 275--276
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.51917pt too wide) in paragraph at lines 278--279
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13])
+(./NYTNaiveBayes_API.R
+Overfull \hbox (376.52289pt too wide) in paragraph at lines 5--7
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][] 
+ []
+
+
+Overfull \hbox (142.52051pt too wide) in paragraph at lines 7--9
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (832.52753pt too wide) in paragraph at lines 18--19
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (844.52765pt too wide) in paragraph at lines 47--49
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[14]
+Overfull \hbox (892.52814pt too wide) in paragraph at lines 72--73
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (868.5279pt too wide) in paragraph at lines 97--98
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
+Overfull \hbox (862.52783pt too wide) in paragraph at lines 119--120
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (118.52026pt too wide) in paragraph at lines 141--142
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (./NYTNaiveBayes_main.R
+Overfull \hbox (34.51941pt too wide) in paragraph at lines 1--2
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (34.51941pt too wide) in paragraph at lines 2--3
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (112.5202pt too wide) in paragraph at lines 11--12
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (784.52704pt too wide) in paragraph at lines 12--13
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (112.5202pt too wide) in paragraph at lines 13--14
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (76.51984pt too wide) in paragraph at lines 21--22
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[16]
+Overfull \hbox (190.521pt too wide) in paragraph at lines 29--31
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+] 
+ []
+
+
+Overfull \hbox (22.51929pt too wide) in paragraph at lines 37--40
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (190.521pt too wide) in paragraph at lines 46--47
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+
+ []
+
+
+Overfull \hbox (154.52063pt too wide) in paragraph at lines 48--49
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (160.52069pt too wide) in paragraph at lines 62--63
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (40.51947pt too wide) in paragraph at lines 71--72
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+Overfull \hbox (88.51996pt too wide) in paragraph at lines 92--93
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (34.51941pt too wide) in paragraph at lines 105--107
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (58.51965pt too wide) in paragraph at lines 111--112
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (88.51996pt too wide) in paragraph at lines 118--119
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (52.51959pt too wide) in paragraph at lines 120--121
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (160.52069pt too wide) in paragraph at lines 121--123
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (46.51953pt too wide) in paragraph at lines 123--124
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (46.51953pt too wide) in paragraph at lines 136--137
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (64.51971pt too wide) in paragraph at lines 138--139
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (136.52045pt too wide) in paragraph at lines 141--142
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (130.52039pt too wide) in paragraph at lines 142--143
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+Overfull \hbox (88.51996pt too wide) in paragraph at lines 148--149
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (304.52216pt too wide) in paragraph at lines 149--150
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][] 
+ []
+
+
+Overfull \hbox (76.51984pt too wide) in paragraph at lines 157--158
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (82.5199pt too wide) in paragraph at lines 159--160
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (64.51971pt too wide) in paragraph at lines 166--167
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (100.52008pt too wide) in paragraph at lines 168--169
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+)
+No file main.bbl.
+[19] (./main.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 6262 strings out of 493488
+ 84005 string characters out of 3141326
+ 241180 words of memory out of 3000000
+ 9437 multiletter control sequences out of 15000+200000
+ 16073 words of font info for 38 fonts, out of 3000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 38i,11n,44p,1527b,2146s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2012/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/201
+2/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/texmf-di
+st/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
+ype1/urw/times/utmri8a.pfb>
+Output written on main.pdf (19 pages, 1308216 bytes).
+PDF statistics:
+ 128 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+

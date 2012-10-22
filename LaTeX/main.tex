@@ -1,0 +1,295 @@
+\documentclass{article}
+\usepackage{NIPS10,times}
+%\documentstyle[nips07submit_09,times]{article}
+\usepackage[square,numbers]{natbib}
+\usepackage{amsmath, epsfig}
+\usepackage{amsfonts}
+\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{easybmat}
+\usepackage{listings}
+\usepackage{footmisc}
+\renewcommand\algorithmiccomment[1]{// \textit{#1}}
+%
+\newcommand{\ignore}[1]{}
+\newcommand{\comment}[1]{}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+% decrease spacing in itemize
+\newenvironment{itemize*}{
+\begin{itemize}
+  \setlength{\itemsep}{0.7em}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{itemize}}
+
+\title{Introduction to Data Science\\Homework Assignment 2}
+
+\author{
+Michael Discenza\\\\
+Columbia University, New York, NY 10027, USA \\
+\texttt{mad2200@columbia.edu}
+}
+}
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to \LaTeX{} to determine where to break
+% the lines. Using \AND forces a linebreak at that point. So, if \LaTeX{}
+% puts 3 of 4 authors names on the first line, and the last on the second
+% line, try using \AND instead of \And before the third author name.
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+\newcommand{\X}{\mathcal{X}}
+
+\nipsfinalcopy
+
+\begin{document}
+
+\maketitle
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+[Note that Lily Amadeo and I started working together on our code for Parts 2 and 3, but due to schedule constraints completed the bulk of the programming and writeup separately.]
+
+\section{The End of Theory}
+
+I would like to discuss two applications that Eurry and mcshaganoff mention, social science research and global climate change, and discuss the utility of big data technology
+
+First, in social science, I think it is important to understand that unlike natural science, most of the methodology and the stipulations about causality, and indeed the epistemology in general is something that is constructed and theorized discursively.  I think the social sciences provide pretty stringent requirements for establishing causality and that minimizes the impact that so called big data methods might have in this type or research.  One good way to think about the compatibility of these methods with social science is through the idea of latent variable methods.  When we approximate real world distributions that we learn about through the observed variables we create, we can’t learn anything about our subjects within the constraints of our human understanding nor through deductive reasoning connect our understanding of the certainty of our findings to the basic maxims that allow us to be sure of knowledge.  Latent variable models might not be useful for a social scientist trying to understand how people think in order to say guide policy or write a book, but they sure can be used in an applied sense for the projects of prediction and profit maximization—two things that aren’t really useful to scientists, but are quite useful for applied scientists such as entrepreneurs and those in industry.  
+
+Global climate change is another area where we can make similar conclusions about the usefulness of big data and latent variable models with infinite parameters spaces.  We might be able to potentially more accurately predict the rate at which climate changes than models that draw on thousands of physical facts and “laws” that enumerate the various feedback cycles and interactivity of the earth’s physical properties.  This is because in a system this complex , not all the interactions can be understood or determined with high enough conditional accuracy.  Having a model that might do a great job of predicting climate change, however, would be relatively useless when it comes to planning specific interventions to stop this climate change.  We could not shape global policy by enacting a cap that would be low enough to save us from reaching a certain temperature because we wouldn’t be able to say what that amount of carbon would be with any kind of certainty given a latent variable model.  Moreover, because policy and indeed science as well are both human activities where epistemological systems are so important, a latent variable model would be of limited use.  With all the trouble people (specifically of one political leaning) have accepting global climate change as a real phenomenon and accepting statistics (the science of lies), can you imagine justifying environmental policy by pointing to latent variable data model for climate change that throws out centuries of physics knowledge?
+
+I guess this is my way of saying that Anderson completely overstated the utility of new big data methods for science, but I certainly appreciate how proactive his piece is.
+
+
+\section{NYC Housing}
+
+\subsection{Linear Regression}
+
+Linear Regression is an appropriate technique to use in this situation, given that we are trying to predict the price of a building.  In this case, cour respones variable price is practically speaking a continuous response and the features or our data are both quantitative and categorical and can be used as preidctors in linear regression.  I fit models that used predictors that had low covariances to avoid the problem of multicollinearity. 
+
+% latex table generated in R 2.15.1 by xtable 1.7-0 package
+% Sat Oct  6 16:42:46 2012
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=.7\columnwidth]{scatter_m.pdf}
+\caption{This scatterplot matrix allows us to quickly idenify covariates within quantitative data and points to the fact that many features have some kind of linear relationship with the price of buildings and thus could be used as regressors.}
+\end{center}
+\end{figure}
+
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{lrp{3in}}
+  \hline
+ & R-Squared Value & Predictors \\ 
+  \hline
+1 & 0.264365415684246 & log(gross.sqft) \\ 
+  2 & 0.285676964820337 & log(gross.sqft) + log(land.sqft) \\ 
+  3 & 0.597559062188755 & log(gross.sqft) + log(land.sqft) + neighborhood, \\ 
+  4 & 0.753624661348507 & log(gross.sqft) + log(land.sqft) + neighborhood + building.class.category \\ 
+  5 & 0.791623231216721 & log(sale.price.n) \~{} log(gross.sqft) + log(land.sqft) + factor(neighborhood)*factor(building.class.category) + year.built + total.units \\ 
+  6 & 0.810915581906036 & log(gross.sqft) + log(land.sqft) + factor(neighborhood)*factor(building.class.category) + year.built + total.units +zip.code \\ 
+   \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+While we might be able to visualize the results of regresson on one graph in a regression model with 3 or even 4 predictors (if we use color scales to represent one of the predictors, it is very difficult to do that wiht 6 or 7 predictors.  I have, however, included a Q-Q normal plot that shows how normally distributed the residuals are around the center of the model.  
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=.7\columnwidth]{qqnorm.eps}
+\caption{This plot indicates that the residuals are very normal abecause the ordered standardized individuals line up along the don't line which traces the percentiales of the noraml curve.  Regression using the predictors in model 6  is quite a reasonable choice because it satisfies the an important assumption for linear regression-- that the residuals are normally distributed.}
+\end{center}
+\end{figure}
+
+\subsection{K- Nearest Neighbors}
+
+First I used the kNN algorithm to attempt to classify with the 
+% latex table generated in R 2.15.1 by xtable 1.7-0 package
+% Sat Oct  6 17:34:32 2012
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{rr}
+  \hline
+ & Error rate for a given choice of K \\ 
+  \hline
+1 & 0.83 \\ 
+  2 & 0.84 \\ 
+  3 & 0.87 \\ 
+  4 & 0.87 \\ 
+  5 & 0.86 \\ 
+  6 & 0.87 \\ 
+  7 & 0.86 \\ 
+  8 & 0.90 \\ 
+  9 & 0.88 \\ 
+  10 & 0.90 \\ 
+   \hline
+\end{tabular}
+\end{center}
+\end{table}
+\subsection{Actionable Insight from this Analysis}
+
+Using the gdata package, I queried the the Google Maps API and then used the longitude and latitude as predictors.  Using only the log of sale price and the longitude and lattitue with a k value of 1, the algorithm achieved an error rate of 0.116.  A more logical choice of preidctors, the  log price per square foot classified buildings with an error rate of only 1.36 percent.  Using all the rest of the quantitative predictors with the the geolocation data, however, yielded a minimum error rate of 0.48 (again with k=1).  This seems fitting because though we might attempt to use other features as proxies for neighborhoods, neighborhoods are actually determined by where a building is located.  It also makes sense that k=1 yields the highest rate of sucessful classificaitons, because in this situation, the class boundaries are very linear and well defined.
+% latex table generated in R 2.15.1 by xtable 1.7-0 package
+% Sat Oct  6 19:04:35 2012
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{rr}
+  \hline
+ & Error rate for a given choice of K \\ 
+  \hline
+1 & 0.01 \\ 
+  2 & 0.01 \\ 
+  3 & 0.03 \\ 
+  4 & 0.04 \\ 
+  5 & 0.04 \\ 
+  6 & 0.05 \\ 
+  7 & 0.05 \\ 
+  8 & 0.05 \\ 
+  9 & 0.06 \\ 
+  10 & 0.06 \\ 
+   \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=.7\columnwidth]{map.png}
+\caption{This was supposed to be a graph of the classifications...but I really have no idea how to figure out what the colors mean or how to tell if they graphed the right way.}
+\end{center}
+\end{figure}
+
+
+\section{The New York Times}
+
+\subsection{Naive Bayes Classifier Implementation}
+
+The classifier that I created is fully vectorized was broken into a generic function for reusuability purposes, but I endedup taking the code out of the fucntional form so that I could calculate more diagnostics and make graphs from data stored in intermediate steps without needing to these points as items in a return list.  Ultimatley, though this was a good exercise in learning how to write complex functions in x, the likelihood that I would reuse this function rather than using another established function is low.  I could however, if I desired more robust diagonstic and results visualization modify the e1071 package accordingly, which might be a more worthwhile exercise for my own use and the use of the open source community. 
+
+In this particular implementation of the model, I used only the article body was used to create the bag of words not the headline/title.  Going forwrad though, an interesting exercise, if we really wanted to perfect a model for this application would be potentially assining different weights to the bag of words associated with the title and the body.
+
+\subsection{Test Conditions and  Results}
+
+The Naive Bayes Classifier was given a data set of 10,000 articles.  Of this data, 80 percent of these records were used as training data and the remaining 20 perecent was used as testing data.  The classifier correctly identified the section of 1722 of these records or 86.1 percent. This meant that the misclassification rate was 13.1 Percent.  In the next secton, I look at the errors that the classifier made to gain better intuition about how the model works.
+
+\subsection{Visualization of Classification Results}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=.7\columnwidth]{class_by_act.pdf}
+\caption{This graph shows the predicted classification of Articles grouped by their actual section in the newspaper.  The large bars represent correct classifications}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=.7\columnwidth]{misclass_err_sum.pdf}
+\caption{Overall, obituaries seemed to have the largest misclassfication rate and business and world were the text two sections in terms of inaccuracy.}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=.7\columnwidth]{misclass_by_act.pdf}
+\caption{This graph shows specifically how articles were misclassified in more detail than the first graph.  I removed the correctly classified records so that we could compare the relative frequency of different incorrect classifications for articles that really come from certain sections.  Note the high rate of misclassifications of obituaries and the difficulty that the model has in determining whether an article might be from sports or arts}
+\end{center}
+\end{figure}
+
+
+We can see intititively, but looking at a few misclassified records at random-- some that were obituatires classified wrongly and other articles thought to be from the obitury section why it might be difficult to algorithmically figure out which section the articles actually came from.  Most of the obituaries are of written about notable people whose lives and accomplishments would be likely to have written before their deaths in the page of either the world, sports, or arts pages.  
+
+Articles from the Obituary section that the classifier misclassified as being from other sections:
+% latex table generated in R 2.15.1 by xtable 1.7-0 package
+% Sat Oct  6 00:36:28 2012
+\begin{table}[H]
+\begin{tabular}{lrp{3in}}
+  \hline
+ & Predicted Section & Article Body \\ 
+  \hline
+1 & Sports & Lee Roy Selmon, the Hall of Fame defensive end who became a cornerstone of the Tampa Bay Buccaneers during their first decade in the National Football League and remained a revered figure in Tampa, Fla., died there Sunday. He was 56. The cause was a stroke he had Friday, the Buccaneers said. Selmon, who teamed with his brother Dewey on national \\ 
+  2 & World & Lawrence S. Eagleburger, a troubleshooting diplomat and senior foreign policy adviser to presidents who served the country for more than 40 years, including 42 days as secretary of state at the close of President George Bush's term, died on Saturday in Charlottesville, Va. He was 80. The cause was pneumonia, according to a spokeswoman for the \\ 
+  3 & Arts & When the Canadian police began connecting the dots in a series of child abductions and torture-murders in the summer of 1981, Clifford Olson, a career criminal with a history of sexual assaults, was placed on a list of potential suspects. It was a good hunch, as it turned out. But the police remain haunted by the fact that Mr. Olson, who died on \\ 
+  4 & Arts & Hazel Rowley, a biographer whose subjects ranged from a neglected Australian writer to a famous African-American one, and from a distinguished pair of French philosophers and their romantic entanglements to a distinguished American presidential couple and their (possible) romantic entanglements, died on March 1 in Manhattan. She was 59. Ms. Rowley \\ 
+  5 & World & Raymond Aubrac, who took that nom de guerre as a storied leader of the resistance effort in Nazi-occupied France during World War II, died on Tuesday in a military hospital in Paris. He was 97. His daughter Catherine announced the death. Mr. Aubrac and his wife, Lucie, became exalted symbols of heroism in their country's fight against the Germans, \\ 
+  6 & World & Ramiz Alia, a cult-of-personality enforcer who succeeded Albania's Communist dictator Enver Hoxha after his death in 1985 and presided over halting and often chaotic moves toward democracy before his own downfall in 1992, died Friday. He was 85. His death was announced by a spokeswoman for Albania's president, Bamir Topi, in Tirana, the capital. \\ 
+  7 & Business & On a summer morning in 1974, a man in Ohio bought a package of chewing gum and the whole world changed. At 8:01 a.m. on June 26 of that year, a 10-pack of Wrigley's Juicy Fruit gum slid down a conveyor belt and past an optical scanner. The scanner beeped, and the cash register understood, faithfully ringing up 67 cents. That purchase, at a Marsh \\ 
+  8 & World & Rubén Zuno Arce, a central defendant in the 1985 torture and killing of an American drug enforcement agent in Mexico , a crime that increased tension between Mexico and the United States in part because of Mr. Zuno's ties to Mexican government officials, died on Tuesday in a federal prison in Coleman, Fla. He was 82. The cause was metastatic lung \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+Further insights about the way the model worked can be gleaned from examining perhaps the second most probably class that the model predicted, or indeed the distribution of class weights across the entire class-space for each record-- ie the ratio between the average weight of the most highly weighted class vs. the second or the third and so on.
+
+We might also examine the parameters we learned from the distriution, our theta-j-cs and sort the vectors to see which words are most associated with which sections.
+
+
+
+\section{Code Appendix}
+All code (in easier to read form) as well as additional graphics files can be found on this assignment's git repository:
+https://github.com/mdiscenza/HW2
+
+
+[I'm sorry I still can't figure out how to get the code to look ok with this listings package]
+
+\subsection{Code for Question 2}
+\lstinputlisting[language=R]{Man2.R}
+
+
+
+\subsection{Code for Question 2}
+\lstinputlisting[language=R]{NYTNaiveBayes_API.R}
+\lstinputlisting[language=R]{NYTNaiveBayes_main.R}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Introduction}
+%\label{sec:introduction}
+%This is your introduction.  You might say something about Fig.~\ref{fig:example} which has something to do with the work of \citep{Wood2009}
+%\section{Methods}
+%These are the methods you use.  You'll probably have some horrible equations in this section like
+%
+%\begin{equation}
+%P(\Theta|\X) \propto P(\X|\Theta) P(\Theta) % note that \X is defined above
+%\label{eqn:bayes_rule}
+%\end{equation}
+%
+%And you might want to include a figure.  Note that this figure floats around on its own.  Don't worry about layout.  Notice that the figure doesn't appear where you put it.  That's OK.  Things will look OK when there is enough material in the paper.
+%
+%\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+%   \centering
+%   \includegraphics[width=4in]{fig1} 
+%   \caption{example caption}
+%   \label{fig:example}
+%\end{figure}
+%
+%You might want to refer to Bayes Rule (Eqn.~\ref{eqn:bayes_rule}) in the text.
+%
+%\section{Experiments}
+%
+%Here is where your awesome experiments go.
+%
+%\section{Conclusion}
+%
+%Presumably you'll have something smart to say here.
+
+\begin{small}
+\bibliographystyle{plainnat}
+\bibliography{References} 
+\end{small}
+\end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  22 OCT 2012 10:09
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  25 OCT 2012 00:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -489,6 +489,95 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 66.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
+
+<bls_graph.jpg, id=1, 142.131pt x 170.5572pt>
+File: bls_graph.jpg Graphic file (type jpg)
+ <use bls_graph.jpg>
+Package pdftex.def Info: bls_graph.jpg used on input line 100.
+(pdftex.def)             Requested size: 397.48499pt x 476.99995pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
+
+{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Package epstopdf Info: Source file: <gender_old.eps>
+(epstopdf)                    date: 2012-10-24 12:20:59
+(epstopdf)                    size: 5397 bytes
+(epstopdf)             Output file: <gender_old-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-10-24 13:10:43
+(epstopdf)                    size: 14439 bytes
+(epstopdf)             Command: <repstopdf --outfile=gender_old-eps-converted-t
+o.pdf gender_old.eps>
+(epstopdf)             \includegraphics on input line 109.
+Package epstopdf Info: Output file is already uptodate.
+
+<gender_old-eps-converted-to.pdf, id=11, 561.09625pt x 390.45876pt>
+File: gender_old-eps-converted-to.pdf Graphic file (type pdf)
+
+<use gender_old-eps-converted-to.pdf>
+Package pdftex.def Info: gender_old-eps-converted-to.pdf used on input line 109
+.
+(pdftex.def)             Requested size: 397.48499pt x 276.60207pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2 <./bls_graph.jpg>]
+Package epstopdf Info: Source file: <gender.eps>
+(epstopdf)                    date: 2012-10-24 12:20:10
+(epstopdf)                    size: 26246 bytes
+(epstopdf)             Output file: <gender-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-10-24 13:10:44
+(epstopdf)                    size: 15685 bytes
+(epstopdf)             Command: <repstopdf --outfile=gender-eps-converted-to.pd
+f gender.eps>
+(epstopdf)             \includegraphics on input line 116.
+Package epstopdf Info: Output file is already uptodate.
+ <gender-eps-converted-to.pdf, id=15, 561.09625pt x 390.45876pt>
+File: gender-eps-converted-to.pdf Graphic file (type pdf)
+
+<use gender-eps-converted-to.pdf>
+Package pdftex.def Info: gender-eps-converted-to.pdf used on input line 116.
+(pdftex.def)             Requested size: 397.48499pt x 276.60207pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./gender_old-eps-converted-to.pdf>]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+ [4 <./gender-eps-converted-to.pdf>]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
 Package epstopdf Info: Source file: <IBM_log_return.eps>
 (epstopdf)                    date: 2012-10-22 10:05:06
 (epstopdf)                    size: 46735 bytes
@@ -497,15 +586,15 @@ Package epstopdf Info: Source file: <IBM_log_return.eps>
 (epstopdf)                    size: 29438 bytes
 (epstopdf)             Command: <repstopdf --outfile=IBM_log_return-eps-convert
 ed-to.pdf IBM_log_return.eps>
-(epstopdf)             \includegraphics on input line 71.
+(epstopdf)             \includegraphics on input line 143.
 Package epstopdf Info: Output file is already uptodate.
 
-<IBM_log_return-eps-converted-to.pdf, id=1, 743.77875pt x 372.39125pt>
+<IBM_log_return-eps-converted-to.pdf, id=45, 743.77875pt x 372.39125pt>
 File: IBM_log_return-eps-converted-to.pdf Graphic file (type pdf)
 
 <use IBM_log_return-eps-converted-to.pdf>
 Package pdftex.def Info: IBM_log_return-eps-converted-to.pdf used on input line
- 71.
+ 143.
 (pdftex.def)             Requested size: 397.48499pt x 199.01427pt.
 Package epstopdf Info: Source file: <IBM_log_volume.eps>
 (epstopdf)                    date: 2012-10-22 10:05:38
@@ -515,44 +604,116 @@ Package epstopdf Info: Source file: <IBM_log_volume.eps>
 (epstopdf)                    size: 29887 bytes
 (epstopdf)             Command: <repstopdf --outfile=IBM_log_volume-eps-convert
 ed-to.pdf IBM_log_volume.eps>
-(epstopdf)             \includegraphics on input line 79.
+(epstopdf)             \includegraphics on input line 151.
 Package epstopdf Info: Output file is already uptodate.
 
-<IBM_log_volume-eps-converted-to.pdf, id=2, 743.77875pt x 372.39125pt>
+<IBM_log_volume-eps-converted-to.pdf, id=46, 743.77875pt x 372.39125pt>
 File: IBM_log_volume-eps-converted-to.pdf Graphic file (type pdf)
 
 <use IBM_log_volume-eps-converted-to.pdf>
 Package pdftex.def Info: IBM_log_volume-eps-converted-to.pdf used on input line
- 79.
+ 151.
 (pdftex.def)             Requested size: 397.48499pt x 199.01427pt.
+ [5 <./IBM_log_return-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <performance.eps>
+(epstopdf)                    date: 2012-10-22 12:09:48
+(epstopdf)                    size: 5974 bytes
+(epstopdf)             Output file: <performance-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-10-23 09:15:19
+(epstopdf)                    size: 13354 bytes
+(epstopdf)             Command: <repstopdf --outfile=performance-eps-converted-
+to.pdf performance.eps>
+(epstopdf)             \includegraphics on input line 183.
+Package epstopdf Info: Output file is already uptodate.
+ <performance-eps-converted-to.pdf, id=61, 561.09625pt x 390.45876pt>
+File: performance-eps-converted-to.pdf Graphic file (type pdf)
+
+<use performance-eps-converted-to.pdf>
+Package pdftex.def Info: performance-eps-converted-to.pdf used on input line 18
+3.
+(pdftex.def)             Requested size: 397.48499pt x 276.60207pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [1
+ [6 <./IBM_log_volume-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <pl.eps>
+(epstopdf)                    date: 2012-10-22 12:26:49
+(epstopdf)                    size: 10203 bytes
+(epstopdf)             Output file: <pl-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-10-23 09:15:20
+(epstopdf)                    size: 14461 bytes
+(epstopdf)             Command: <repstopdf --outfile=pl-eps-converted-to.pdf pl
+.eps>
+(epstopdf)             \includegraphics on input line 191.
+Package epstopdf Info: Output file is already uptodate.
 
-{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./IBM_l
-og_return-eps-converted-to.pdf>]
+<pl-eps-converted-to.pdf, id=77, 561.09625pt x 390.45876pt>
+File: pl-eps-converted-to.pdf Graphic file (type pdf)
+
+<use pl-eps-converted-to.pdf>
+Package pdftex.def Info: pl-eps-converted-to.pdf used on input line 191.
+(pdftex.def)             Requested size: 397.48499pt x 276.60207pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <./performance-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 215--218
+
+ []
+
+[8 <./pl-eps-converted-to.pdf>]
+Overfull \hbox (136.28003pt too wide) in paragraph at lines 228--228
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--228
+
+ []
+
+Package epstopdf Info: Source file: <getglue2.eps>
+(epstopdf)                    date: 2012-10-25 00:36:38
+(epstopdf)                    size: 6261 bytes
+(epstopdf)             Output file: <getglue2-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-10-25 00:26:46
+(epstopdf)                    size: 15368 bytes
+(epstopdf)             Command: <repstopdf --outfile=getglue2-eps-converted-to.
+pdf getglue2.eps>
+(epstopdf)             \includegraphics on input line 231.
+runsystem(repstopdf --outfile=getglue2-eps-converted-to.pdf getglue2.eps)...exe
+cuted safely (allowed).
+
+Package epstopdf Info: Result file: <getglue2-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-10-25 00:42:02
+(epstopdf)                    size: 16180 bytes.
+<getglue2-eps-converted-to.pdf, id=107, 561.09625pt x 390.45876pt>
+File: getglue2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use getglue2-eps-converted-to.pdf>
+Package pdftex.def Info: getglue2-eps-converted-to.pdf used on input line 231.
+(pdftex.def)             Requested size: 397.48499pt x 276.60207pt.
+
 No file main.bbl.
-[2 <./IBM_log_volume-eps-converted-to.pdf>] (./main.aux) ) 
+[9 <./getglue2-eps-converted-to.pdf>] [10] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 5184 strings out of 493488
- 71420 string characters out of 3141326
- 137113 words of memory out of 3000000
- 8392 multiletter control sequences out of 15000+200000
+ 5234 strings out of 493488
+ 72557 string characters out of 3141326
+ 141113 words of memory out of 3000000
+ 8432 multiletter control sequences out of 15000+200000
  14389 words of font info for 36 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,9n,39p,230b,251s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2
-012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2012/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2012/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/texmf-dist/fo
-nts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type
-1/urw/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/time
-s/utmr8a.pfb>
-Output written on main.pdf (2 pages, 105843 bytes).
+ 38i,10n,39p,1160b,253s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/20
+12/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2012/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2012/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/texmf-dist/fon
+ts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1
+/urw/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times
+/utmr8a.pfb>
+Output written on main.pdf (10 pages, 390528 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 143 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

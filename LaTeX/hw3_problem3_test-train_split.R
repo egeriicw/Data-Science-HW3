@@ -1,4 +1,3 @@
-#*******Code for HW2-Problem 3 - (Main function)******
 setwd("~/Dropbox/Fall_2012/Intro_to_Data_Science/Assignments/HW3/Data Science HW3/LaTeX")
 library(lattice, xtable)
 #getting the data from Yahoo Finance and making it into a time series object

@@ -1,4 +1,3 @@
-#*******Code for HW3 - Problem 1******
 crime <- read.csv("http://datasets.flowingdata.com/crimeRatesByState2005.tsv", header=TRUE, sep="\t")
 #Flowing Data Tutorial Distruction
 radius <- sqrt( oc$size/ pi)

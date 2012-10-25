@@ -1,4 +1,3 @@
-#*******Code for HW3-Problem 4******
 require(rjson)
 require(plyr)
 #######This part is Jared's code [I had code, it worked, and then for some reason it stopped working]
